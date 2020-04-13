@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src='core.js'></script>
+    <link rel='stylesheet' href='bootstrap.min.css'>
+    <style>
+        .col{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+    <title>Demo: Google Sign in</title>
+</head>
+<body onload="init()">
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>
+                <div class='login'>
+                    <h3>Sign in with Google</h3>
+                    <button type='button' class='btn btn-primary' onclick="signIn()">Sign in</button>
+                </div>
+                <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Access Token</div>
+                    <div class="card-body">
+                        <p id='auth'></p>
+                    </div>
+                </div>
+                <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Expires in</div>
+                    <div class="card-body">
+                        <p id='expiry'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
