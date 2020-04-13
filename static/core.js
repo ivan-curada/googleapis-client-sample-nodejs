@@ -3,7 +3,7 @@ function init(){
         console.log('Auth loaded')
         gapi.client.init({
             apiKey: '',
-            clientId: '363232934631-pjbd198u1kic7hlmpooh690kirmqg7iq.apps.googleusercontent.com',
+            clientId: '',
             discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest'],
             scope: 'profile https://www.googleapis.com/auth/gmail.send',
             access_type: 'offline'
